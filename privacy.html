@@ -19,7 +19,7 @@
     </nav>
 
     <h1>Política de privacidad</h1>
-    <p class="meta">Última actualización: 27 de agosto de 2026</p>
+    <p class="meta">Última actualización: 28 de agosto de 2026</p>
     <p>Esta política informa, de forma clara y completa, sobre el tratamiento de datos personales en la aplicación <strong>Mi Momento</strong> (iOS) y en este sitio web, conforme al Reglamento (UE) 2016/679 (RGPD), la Ley Orgánica 3/2018 (LOPDGDD), la normativa de servicios digitales aplicable y las directrices de privacidad de App Store.</p>
 
     <h2>1. Responsable del tratamiento</h2>
@@ -92,6 +92,16 @@
           <td>Identificador de usuario de Firebase, datos necesarios para autenticar, sincronizar y proteger la cuenta</td>
           <td>Firebase / uso de la app</td>
         </tr>
+        <tr>
+          <td>Diagnóstico de fallos</td>
+          <td>Informes de cierre inesperado (trazas, modelo de dispositivo, versión de la app) asociados al UID si hay sesión</td>
+          <td>Firebase Crashlytics / uso de la app</td>
+        </tr>
+        <tr>
+          <td>Analítica de producto</td>
+          <td>Eventos de uso (por ejemplo, momento empezado o completado, categoría o sonido) asociados al UID si hay sesión. No incluye el texto de notas ni gratitudes</td>
+          <td>Firebase Analytics / uso de la app</td>
+        </tr>
       </tbody>
     </table>
     <p>No usamos HealthKit, no accedemos a tus contactos y no vendemos tus datos. Las notas y gratitudes no se usan para personalizar anuncios.</p>
@@ -134,6 +144,14 @@
           <td>Consentimiento (permiso del sistema)</td>
         </tr>
         <tr>
+          <td>Diagnosticar cierres inesperados y mejorar la estabilidad de la app</td>
+          <td>Interés legítimo (art. 6.1.f)</td>
+        </tr>
+        <tr>
+          <td>Entender el uso de funciones (analítica de producto) para mejorar Mi Momento</td>
+          <td>Interés legítimo (art. 6.1.f)</td>
+        </tr>
+        <tr>
           <td>Seguridad, prevención de abuso y cumplimiento legal</td>
           <td>Interés legítimo (art. 6.1.f) y obligación legal (art. 6.1.c) cuando corresponda</td>
         </tr>
@@ -152,12 +170,14 @@
       <li><strong>Datos solo en el dispositivo</strong> (foto local, widgets): se eliminan al borrar la app o, en su caso, al borrar la cuenta y reinstalas.</li>
       <li><strong>Compras de Apple:</strong> el registro de la compra permanece en tu Apple ID, según Apple.</li>
       <li><strong>Emails de soporte:</strong> el tiempo necesario para resolver la consulta y las obligaciones legales.</li>
+      <li><strong>Informes de Crashlytics:</strong> el tiempo que Google conserve los informes de fallos, según su política de Firebase.</li>
+      <li><strong>Eventos de Analytics:</strong> el tiempo que Google conserve los eventos de producto, según su política de Firebase.</li>
     </ul>
 
     <h2>6. Destinatarios y encargados</h2>
     <p>No vendemos datos personales. Compartimos información solo con proveedores necesarios para prestar el servicio:</p>
     <ul>
-      <li><strong>Google LLC / Firebase</strong> — Authentication y Cloud Firestore (cuenta y sincronización). <a href="https://firebase.google.com/support/privacy">Privacidad de Firebase</a>.</li>
+      <li><strong>Google LLC / Firebase</strong> — Authentication, Cloud Firestore (cuenta y sincronización), Crashlytics (diagnóstico de fallos) y Analytics (eventos de producto). <a href="https://firebase.google.com/support/privacy">Privacidad de Firebase</a>.</li>
       <li><strong>Google Sign-In</strong> — si eliges entrar con Google. <a href="https://policies.google.com/privacy">Política de Google</a>.</li>
       <li><strong>Apple</strong> — Sign in with Apple, App Store / StoreKit, notificaciones del sistema, App Tracking Transparency y SKAdNetwork. <a href="https://www.apple.com/legal/privacy/">Privacidad de Apple</a>.</li>
       <li><strong>Google AdMob y User Messaging Platform</strong> — anuncios en el plan gratuito y gestión del consentimiento en el EEE/UK. <a href="https://policies.google.com/privacy">Privacidad de Google</a> y <a href="https://support.google.com/admob/answer/6128543">AdMob</a>.</li>
@@ -169,7 +189,7 @@
 
     <h2>8. Publicidad, consentimiento y seguimiento</h2>
     <p>En el plan gratuito podemos mostrar anuncios (banner, interstitial y recompensado). Premium elimina los anuncios.</p>
-    <p>En el EEE, Reino Unido y Suiza mostramos el formulario de consentimiento de <strong>Google User Messaging Platform (UMP)</strong> antes de anuncios personalizados. En iOS también podemos pedir permiso de <strong>App Tracking Transparency (ATT)</strong>.</p>
+    <p>En el EEE, Reino Unido y Suiza mostramos el formulario de consentimiento de <strong>Google User Messaging Platform (UMP)</strong> antes de anuncios personalizados. En iOS, en el plan gratuito, pedimos también permiso de <strong>App Tracking Transparency (ATT)</strong> después de ese consentimiento. Premium no muestra anuncios y no pide ATT.</p>
     <ul>
       <li>Si rechazas el seguimiento o el consentimiento publicitario, puedes seguir usando Mi Momento. Los anuncios, si se muestran, serán menos relevantes o no personalizados, según lo que permita la plataforma.</li>
       <li>Puedes cambiar el consentimiento publicitario en el mensaje de UMP cuando vuelva a mostrarse, y el seguimiento en Ajustes de iOS &gt; Privacidad y seguridad &gt; Seguimiento.</li>
